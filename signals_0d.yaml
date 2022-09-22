@@ -1,18 +1,20 @@
 ###
 tinj:
+  comment: "Injected torque"
   type: "MDS"
   tree: "D3D"
   node: "NB:TINJ"
   map_to: "tinj"
 
 pinj: 
+  comment: "Injected neutral beam power"
   type: "MDS"
   tree: "D3D"
   node: "NB:PINJ"
   map_to: "pinj"
 
 echpwrc:
-  comment: "Total ECH power"
+  comment: "Total injected ECH power"
   tree: "D3D"
   node: "RF.ECH.TOTAL.ECHPWRC"
   map_to: "echpwrc"

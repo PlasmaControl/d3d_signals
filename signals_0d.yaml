@@ -1,293 +1,349 @@
 ###
 tinj:
-  Tree: "D3D"
-  Node: "NB:TINJ"
+  type: "MDS"
+  tree: "D3D"
+  node: "NB:TINJ"
   map_to: "tinj"
 
 pinj: 
-  Tree: "D3D"
-  Node: "NB:PINJ"
+  type: "MDS"
+  tree: "D3D"
+  node: "NB:PINJ"
   map_to: "pinj"
 
 echpwrc:
   comment: "Total ECH power"
-  Tree: "D3D"
-  Node: "RF.ECH.TOTAL.ECHPWRC"
+  tree: "D3D"
+  node: "RF.ECH.TOTAL.ECHPWRC"
   map_to: "echpwrc"
+  type: "MDS"
 
 pinjf_15l:
-  Tree: "D3D"
-  Node: "NB.NB15L:PINJF_15L"
+  tree: "D3D"
+  node: "NB.NB15L:PINJF_15L"
   map_to: "pinjf_15l"
+  type: "MDS"
 
 pinjf_15r: 
-  Tree: "D3D"
-  Node: "NB.NB15R:PINJF_15R"
+  tree: "D3D"
+  node: "NB.NB15R:PINJF_15R"
   map_to: "pinjf_15r"
+  type: "MDS"
 
 pinjf_21l: 
-  Tree: "D3D"
-  Node: "NB.NB21L:PINJF_21L"
+  tree: "D3D"
+  node: "NB.NB21L:PINJF_21L"
   map_to: "pinjf_21l"
+  type: "MDS"
 
 pinjf_21r: 
-  Tree: "D3D"
-  Node: "NB.NB21R:PINJF_21R"
+  tree: "D3D"
+  node: "NB.NB21R:PINJF_21R"
   map_to: "pinjf_21r"
+  type: "MDS"
 
 pinjf_30l:
-  Tree: "D3D"
-  Node: "NB.NB30L:PINJF_30L"
+  tree: "D3D"
+  node: "NB.NB30L:PINJF_30L"
   map_to: "pinjf_30l"
+  type: "MDS"
 
 pinjf_30r:
-  Tree: "D3D"
-  Node: "NB.NB30R:PINJF_30R"
+  tree: "D3D"
+  node: "NB.NB30R:PINJF_30R"
   map_to: "pinjf_30r"
+  type: "MDS"
 
 pinjf_33l:
-  Tree: "D3D"
-  Node: "NB.NB33L:PINJF_33L"
+  tree: "D3D"
+  node: "NB.NB33L:PINJF_33L"
   map_to: "pinjf_33l"
+  type: "MDS"
 
 pinjf_33r:
-  Tree: "D3D"
-  Node: "NB.NB33R:PINJF_33R"
+  tree: "D3D"
+  node: "NB.NB33R:PINJF_33R"
   map_to: "pinjf_33r"
+  type: "MDS"
 
 tecef01: 
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF01"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF01"
   map_to: "tecef01"
+  type: "MDS"
 
 tecef02:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF02"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF02"
   map_to: "tecef02"
+  type: "MDS"
 
 tecef03:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF03"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF03"
   map_to: "tecef03"
+  type: "MDS"
 
 tecef04:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF04"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF04"
   map_to: "tecef04"
+  type: "MDS"
 
 tecef05:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF05"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF05"
   map_to: "tecef05"
+  type: "MDS"
 
 tecef06:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF06"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF06"
   map_to: "tecef06"
+  type: "MDS"
 
 tecef07:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF07"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF07"
   map_to: "tecef07"
+  type: "MDS"
 
 tecef08:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF08"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF08"
   map_to: "tecef08"
+  type: "MDS"
 
 tecef09:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF09"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF09"
   map_to: "tecef09"
+  type: "MDS"
 
 tecef10:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF10"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF10"
   map_to: "tecef10"
+  type: "MDS"
 
 tecef11:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF11"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF11"
   map_to: "tecef11"
+  type: "MDS"
 
 tecef12:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF12"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF12"
   map_to: "tecef12"
+  type: "MDS"
 
 tecef13:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF13"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF13"
   map_to: "tecef13"
+  type: "MDS"
 
 tecef14:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF14"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF14"
   map_to: "tecef14"
+  type: "MDS"
 
 tecef15:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF15"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF15"
   map_to: "tecef15"
+  type: "MDS"
 
 tecef16:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF16"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF16"
   map_to: "tecef16"
+  type: "MDS"
 
 tecef17:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF17"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF17"
   map_to: "tecef17"
+  type: "MDS"
 
 tecef18:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF18"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF18"
   map_to: "tecef18"
+  type: "MDS"
 
 tecef19:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF19"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF19"
   map_to: "tecef19"
+  type: "MDS"
 
 tecef20:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF20"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF20"
   map_to: "tecef20"
+  type: "MDS"
 
 tecef21:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF21"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF21"
   map_to: "tecef21"
+  type: "MDS"
 
 tecef22:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF22"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF22"
   map_to: "tecef22"
+  type: "MDS"
 
 tecef23:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF23"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF23"
   map_to: "tecef23"
+  type: "MDS"
 
 tecef24:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF24"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF24"
   map_to: "tecef24"
+  type: "MDS"
 
 tecef25:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF25"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF25"
   map_to: "tecef25"
+  type: "MDS"
 
 tecef26:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF26"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF26"
   map_to: "tecef26"
+  type: "MDS"
 
 tecef27:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF27"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF27"
   map_to: "tecef27"
+  type: "MDS"
 
 tecef28:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF28"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF28"
   map_to: "tecef28"
+  type: "MDS"
 
 tecef29:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF29"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF29"
   map_to: "tecef29"
+  type: "MDS"
 
 tecef30:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF30"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF30"
   map_to: "tecef30"
+  type: "MDS"
 
 tecef31:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF31"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF31"
   map_to: "tecef31"
+  type: "MDS"
 
 tecef32:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF32"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF32"
   map_to: "tecef32"
+  type: "MDS"
 
 tecef33:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF33"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF33"
   map_to: "tecef33"
+  type: "MDS"
 
 tecef34:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF34"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF34"
   map_to: "tecef34"
+  type: "MDS"
 
 tecef35:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF35"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF35"
   map_to: "tecef35"
+  type: "MDS"
 
 tecef36:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF36"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF36"
   map_to: "tecef36"
+  type: "MDS"
 
 tecef37:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF37"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF37"
   map_to: "tecef37"
+  type: "MDS"
 
 tecef38:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF38"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF38"
   map_to: "tecef38"
+  type: "MDS"
 
 tecef39:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF39"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF39"
   map_to: "tecef39"
+  type: "MDS"
 
 tecef40:
-  Tree: "D3D"
-  Node: "ELECTRONS.ECE.TECEF.TECEF40"
+  tree: "D3D"
+  node: "ELECTRONS.ECE.TECEF.TECEF40"
   map_to: "tecef40"
-
+  type: "MDS"
 
 neutrons:
-  Tree: "D3D"
-  Node: "IONS.NEUTRONS.FIP:NEUTRONSRATE"
+  tree: "D3D"
+  node: "IONS.NEUTRONS.FIP:NEUTRONSRATE"
   map_to: "neutronsrate"
   comment: "https://diii-d.gat.com/diii-d/Diag/neutrons"
+  type: "MDS"
 
 doutu:
   comment: "Top Triangularity"
-  Tree: "EFIT01"
-  Node: "RESULTS.AEQDSK:DOUTU"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:DOUTU"
   map_to: "doutu"
+  type: "MDS"
 
 doutl:
   comment: "Bottom Triangularity"
-  Tree: "EFIT01"
-  Node: "RESULTS.AEQDSK:DOUTL"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:DOUTL"
   map_to: "doutl"
+  type: "MDS"
 
 elongm:
   comment: "Plasma Elongation"
-  Tree: "EFIT01"
-  Node: "RESULTS.AEQDSK:ELONGM"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:ELONGM"
   map_to: "elongm"
+  type: "MDS"
 
 vout:
   comment: "Plasma volume"
-  Tree: "EFIT01"
-  Node: "RESULTS.AEQDSK:VOUT"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:VOUT"
   map_to: "vout"
+  type: "MDS"
 
 ali:
   comment: "Internal inductance"
-  Tree: "EFIT01"
-  Node: "RESULTS.AEQDSK:ALI"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:ALI"
   map_to: "ali"
+  type: "MDS"

@@ -1,0 +1,36 @@
+###
+
+edens_prof:
+  type: "MDS"
+  tree: "D3D"
+  node: "ELECTRONS.PROFILE_FITS.ZIPFIT:EDENSFIT"
+  map_to: "edens"
+  comment: "Electron density from zipfit"
+
+etemp_prof:
+  type: "MDS"
+  tree: "D3D"
+  node: "ELECTRONS.PROFILE_FITS.ZIPFIT:ETEMPFIT"
+  map_to: "etemp"
+  comment: "Electron temperature profile from zipfit"
+
+ion_rot:
+  type: "MDS"
+  tree: "ZIPFIT01"
+  node: "PROFILES.TROTFIT", "map_to": "ion_rot"
+  map_to: "ion_rot"
+  comment: "Ion rotation profile"
+
+rot_transform:
+  type: "MDS"
+  tree: "EFIT01"
+  node: "RESULTS.GEQDSK:QPSI"
+  map_to: "qpsi"
+  comment: "Rotational transform"
+
+plasma_pressure:
+  type: "MDS"
+  tree: "EFIT01"
+  node: "RESULTS.GEQDSK:PRES"
+  map_to: "pressure"
+  comment: "Plasma pressure"

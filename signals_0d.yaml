@@ -347,3 +347,21 @@ ali:
   node: "RESULTS.AEQDSK:ALI"
   map_to: "ali"
   type: "MDS"
+
+iptipp:
+  comment: "Target current"
+  type: "PTDATA"
+  node: "\\iptipp"
+  map_to: "iptipp"
+
+dstdenp:
+  comment: "Target density"
+  type: "PTDATA"
+  node: "\\dstdenp"
+  map_to: "dstdenp"
+
+dssdenest:
+  comment: "Line-averaged plasma density"
+  type: "PTDATA"
+  node: "\\dssdenest"
+  map_to: "dssdenest"

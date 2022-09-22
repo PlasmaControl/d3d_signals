@@ -17,7 +17,7 @@ etemp_prof:
 ion_rot:
   type: "MDS"
   tree: "ZIPFIT01"
-  node: "PROFILES.TROTFIT", "map_to": "ion_rot"
+  node: "PROFILES.TROTFIT"
   map_to: "ion_rot"
   comment: "Ion rotation profile"
 

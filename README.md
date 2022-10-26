@@ -1,9 +1,9 @@
 # D3D signals
 Defines mapping of D3D MDS/PTdata signals to local storage on PU systems as yaml files
 
-These definitions come in handy when we want to work with D3D signals and require 
+These definitions come in handy when workgin with D3D signals and provide 
 * A handy way of accessing them, for example in a locally cached data file
-* Quickly pulling data from MDS or PTDATA without having to remember where this data is stored
+* Quickly pulling data from MDS or PTDATA without having to remember where data is stored
 
 The signals used in the repository can be used like this:
 ```python

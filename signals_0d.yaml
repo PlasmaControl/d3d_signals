@@ -13,6 +13,20 @@ pinj:
   node: "NB:PINJ"
   map_to: "pinj"
 
+Bt:
+  comment: "B-coil current, gives Bt in real-time"
+  type: "PTDATA"
+  node: "\\Bt"
+  pcs: true 
+  map_to: "Bt"
+
+pcbcoil:
+  comment: "B-coil current, gives Bt in real-time"
+  type: "PTDATA"
+  node: "\\pcbcoil"
+  pcs: true 
+  map_to: "pcbcoil"
+ 
 echpwrc:
   comment: "Total injected ECH power"
   tree: "D3D"
@@ -351,19 +365,114 @@ ali:
   type: "MDS"
 
 iptipp:
-  comment: "Target current"
+  comment: "Target current, set before the shot runs"
   type: "PTDATA"
   node: "\\iptipp"
   map_to: "iptipp"
+  pcs: true
+
+ipsiptargt:
+  comment: "Real-time control plasma current target"
+  type: "PTDATA"
+  node: "\\ipsiptargt"
+  map_to: "ipsiptargt"
+  pcs: true
+
+gyspinj:
+  comment: "ECH injected gyro power"
+  type: "PTDATA"
+  node: "gyspinj"
+  map_to: "gyspinj"
+  pcs: true
+
+bmspinj:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj"
+  map_to: "bmspinj"
+  pcs: true
+
+bmspinj15l:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj15l"
+  map_to: "bmspinj15l"
+  pcs: true
+
+bmspinj15r:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj15r"
+  map_to: "bmspinj15r"
+  pcs: true
+
+bmspinj21l:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj21l"
+  map_to: "bmspinj21l"
+  pcs: true
+
+bmspinj21r:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj21r"
+  map_to: "bmspinj21r"
+  pcs: true
+
+bmspinj30l:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj30l"
+  map_to: "bmspinj30l"
+  pcs: true
+
+bmspinj30r:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj30r"
+  map_to: "bmspinj30r"
+  pcs: true
+
+bmspinj31l:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj31l"
+  map_to: "bmspinj31l"
+  pcs: true
+
+bmspinj31r:
+  comment: "NBI power injected, real-time"
+  type: "PTDATA"
+  node: "bmspinj31r"
+  map_to: "bmspinj31r"
+  pcs: true
+
+bmstinj:
+  comment: "NBI toruqe injected, real-time"
+  type: "PTDATA"
+  node: "bmstinj"
+  map_to: "bmstinj"
+  pcs: true
 
 dstdenp:
   comment: "Target density"
   type: "PTDATA"
-  node: "\\dstdenp"
+  node: "dstdenp"
   map_to: "dstdenp"
+  pcs: true
 
 dssdenest:
   comment: "Line-averaged plasma density"
   type: "PTDATA"
   node: "\\dssdenest"
   map_to: "dssdenest"
+  pcs: true
+
+density:
+  comment: "Post-processed, based on EFIT"
+  type: "MDS"
+  tree: "EFIT01"
+  node: "\\EFIT01::density"
+  map_to: "efit_density"
+  type: "MDS"

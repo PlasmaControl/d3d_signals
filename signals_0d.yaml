@@ -343,6 +343,39 @@ doutl:
   map_to: "doutl"
   type: "MDS"
 
+sqfod:
+  comment: "Outer-bottom squareness, Ferron def"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK.SQFOD"
+  map_to: "sqfod_rt"
+  type: "MDS"
+  pcs: true
+
+sqfou:
+  comment: "Outer-top squareness, Ferron def"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK.SQFOU"
+  map_to: "sqfou_rt"
+  type: "MDS"
+  pcs: true
+
+sqlou:
+  comment: "Outer-bottom squareness, Luce def"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK.SQLOU"
+  map_to: "sqlou_rt"
+  type: "MDS"
+  pcs: true
+
+sqlod:
+  comment: "Outer-top squareness, Luce def"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK.SQFOD"
+  map_to: "sqlod_rt"
+  type: "MDS"
+  pcs: true
+
+
 elongm:
   comment: "Plasma Elongation"
   tree: "EFIT01"

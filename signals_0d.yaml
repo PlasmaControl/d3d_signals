@@ -329,18 +329,32 @@ neutrons:
   comment: "https://diii-d.gat.com/diii-d/Diag/neutrons"
   type: "MDS"
 
-doutu:
+tribot:
   comment: "Top Triangularity"
   tree: "EFIT01"
-  node: "RESULTS.AEQDSK:DOUTU"
-  map_to: "doutu"
+  node: "RESULTS.AEQDSK:TRIBOT"
+  map_to: "tribot"
   type: "MDS"
 
-doutl:
+tritop:
   comment: "Bottom Triangularity"
   tree: "EFIT01"
-  node: "RESULTS.AEQDSK:DOUTL"
-  map_to: "doutl"
+  node: "RESULTS.AEQDSK:TRITOP"
+  map_to: "tritop"
+  type: "MDS"
+
+tritop_rt:
+  comment: "Top Trianguarity from rtEFIT"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK:TRITOP"
+  map_to: "tritop_rt"
+  type: "MDS"
+
+tribot_rt:
+  comment: "Top Trianguarity from rtEFIT"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK:TRIBOT"
+  map_to: "tribot_rt"
   type: "MDS"
 
 sqfod:
@@ -376,11 +390,18 @@ sqlod:
   pcs: true
 
 
-elongm:
+kappa:
   comment: "Plasma Elongation"
   tree: "EFIT01"
-  node: "RESULTS.AEQDSK:ELONGM"
-  map_to: "elongm"
+  node: "RESULTS.AEQDSK:KAPPA"
+  map_to: "kappa"
+  type: "MDS"
+
+kappa_rt:
+  comment: "Plasma elongation from rtEFIT"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK:KAPPA"
+  map_to: "kappa_rt"
   type: "MDS"
 
 vout:

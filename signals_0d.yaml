@@ -16,14 +16,14 @@ pinj:
 Bt:
   comment: "B-coil current, gives Bt in real-time"
   type: "PTDATA"
-  node: "\\Bt"
+  node: "Bt"
   pcs: true 
   map_to: "Bt"
 
 pcbcoil:
   comment: "B-coil current, gives Bt in real-time"
   type: "PTDATA"
-  node: "\\pcbcoil"
+  node: "pcbcoil"
   pcs: true 
   map_to: "pcbcoil"
  

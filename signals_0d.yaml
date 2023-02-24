@@ -23,7 +23,7 @@ Bt:
 pcbcoil:
   comment: "B-coil current, gives Bt in real-time"
   type: "PTDATA"
-  node: "\pcbcoil"
+  node: "pcbcoil"
   pcs: true 
   map_to: "pcbcoil"
  

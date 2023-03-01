@@ -16,8 +16,8 @@ pinj:
 betan:
   comment: "Ratio of magnetic to kinetic pressure"
   type: "MSD"
-  tree: "D3D:
-  node: "\\betan"
+  tree: "MHD"
+  node: "EFIT.EFIT01.RESULTS.AEQDSK:BETAN"
   map_to: "betan"
 
 Bt:

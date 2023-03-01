@@ -435,7 +435,7 @@ iptipp:
 ipsiptargt:
   comment: "Real-time control plasma current target"
   type: "PTDATA"
-  node: "\\ipsiptargt"
+  node: "ipsiptargt"
   map_to: "ipsiptargt"
   pcs: true
 

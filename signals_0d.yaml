@@ -13,6 +13,13 @@ pinj:
   node: "NB:PINJ"
   map_to: "pinj"
 
+betan:
+  comment: "Ratio of magnetic to kinetic pressure"
+  type: "MSD"
+  tree: "D3D:
+  node: "\\betan"
+  map_to: "betan"
+
 Bt:
   comment: "B-coil current, gives Bt in real-time"
   type: "PTDATA"

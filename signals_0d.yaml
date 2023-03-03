@@ -20,6 +20,21 @@ betan:
   node: "EFIT.EFIT01.RESULTS.AEQDSK:BETAN"
   map_to: "betan"
 
+efsbetan:
+  comment: "Ratio of magnetic to kinetic pressure, in PTDATA"
+  type: "PTDATA"
+  node: "efsbetan"
+  map_to: "efsbetan"
+  pcs: true
+
+efswmhd:
+  comment: "Plasma stored energy"
+  type: "PTDATA"
+  node: "efswmhd"
+  map_to: "efswmhd"
+  pcs: true
+
+
 Bt:
   comment: "B-coil current, gives Bt in real-time"
   type: "PTDATA"
@@ -396,7 +411,6 @@ sqlod:
   type: "MDS"
   pcs: true
 
-
 kappa:
   comment: "Plasma Elongation"
   tree: "EFIT01"
@@ -425,6 +439,13 @@ ali:
   map_to: "ali"
   type: "MDS"
 
+efsli:
+  comment: "Internal inductance, from PTdata"
+  type: "PTDATA"
+  node: "efsli"
+  map_to: "efsli"
+  pcs: true
+
 iptipp:
   comment: "Target current, set before the shot runs"
   type: "PTDATA"
@@ -437,6 +458,13 @@ ipsiptargt:
   type: "PTDATA"
   node: "ipsiptargt"
   map_to: "ipsiptargt"
+  pcs: true
+
+ipspr15V:
+  comment: "Actual plasma current. If in doubt, use ipsiptargt instead."
+  type: "PTDATA"
+  node: "ipspr15V"
+  map_to: "ipspr15V"
   pcs: true
 
 gyspinj:
@@ -537,3 +565,38 @@ density:
   node: "\\EFIT01::density"
   map_to: "efit_density"
   type: "MDS"
+
+q95:
+  comment: "Q95 safety factor"
+  type: "MDS"
+  tree: "EFIT01"
+  node: "RESULTS.AEQDSK:Q95"
+  map_to: "q95"
+
+qmin:
+  comment: "Minimum safety factor"
+  type: "MDS"
+  tree: "EFITRT1"
+  node: "RESULTS.AEQDSK.QMIN"
+  map_to: "qmin"
+
+pradcore:
+  comment: "Radiated power: core"
+  type: "MDS"
+  tree: "D3D"
+  node: "SPECTROSCOPY.PRAD.BOLOM.PRAD_01.POWER:BOL_L15_P"
+  map_to: "bol_l15_p"
+
+pradedge:
+  comment: "Radiated power: edge"
+  type: "MDS"
+  tree: "D3D"
+  node: "SPECTROSCOPY.PRAD.BOLOM.PRAD_01.POWER:BOL_L03_P"
+  map_to: "bol_l03_p"
+
+ipeecoil:
+  comment: "Plasma current error"
+  type: "PTDATA"
+  node: "ipeecoil"
+  map_to: "ipeecoil"
+

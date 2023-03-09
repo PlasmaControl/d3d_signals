@@ -71,7 +71,7 @@ plt.title("edensfit (zipfit)")
 plt.savefig("ne.png")
 ```
 
-
+![Result](ne.png)
 
 
 An example of how this mapping can be used in version-controlled datasets is 

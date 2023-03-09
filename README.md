@@ -15,25 +15,68 @@ import matplotlib.pyplot as plt
 with open("signals_0d.yaml", "r") as stream:
     signal_defs_0d = yaml.safe_load(stream)
 
-signal_pinj = signal_defs_0d["pinj"]
+sig_pinj = signal_defs_0d["pinj"]
 
 c = mds.Connection("atlas.gat.com")
-c.openTree("d3d", 142111)
+c.openTree(sig_pinj["tree"], 142111)
+
+z = c.get(f"_s={sig_pinj['node']}").data()
+z_units = c.get("units_of(dim_of(_s))")
 
 x = c.get(sig_pinj['node']).dim_of().data()
-x_units = c.get(sig_pinj['node']).dim_of().units_of().data()
-if x_units == " ":
-    x_units = "ms"
-
-y = c.get(sig_pinj['node']).data()
-y_units = c.get(f"""UNITS_OF({sig_pinj['node']})""").data()
-plt.plot(x, y)
+x_units = c.get(f"""UNITS_OF({sig_pinj['node']})""").data()
+plt.plot(x, z)
 plt.xlabel(x_units)
-plt.ylabel(y_units)
+plt.ylabel(z_units)
 plt.title("pinj")
+plt.savefig("pinj.png")
 ```
 
 ![Result](pinj.png)
+
+
+Similar for a profile:
+```python
+import yaml
+import MDSplus as mds
+import matplotlib.pyplot as plt
+
+
+with open("signals_1d.yaml", "r") as stream:
+    signal_defs_1d = yaml.safe_load(stream)
+
+sig_ne = signal_defs_1d["edensfit"]
+
+c = mds.Connection("atlas.gat.com")
+c.openTree(sig_ne["tree"], 142111)
+
+zdata = c.get(f"_s={sig_ne['node']}").data()
+zunits = c.get("units_of(_s)")
+
+rank = zdata.ndim
+# time-base
+xdata = c.get("dim_of(_s)")
+xunits = c.get("units_of(dim_of(_s))")
+ydata = c.get("dim_of(_s, 1)")
+yunits = c.get("units_of(dim_of(_s, 1))")
+# space-base
+
+#y = c.get(sig_ne['node']).data()
+#y_units = c.get(f"""UNITS_OF({sig_ne['node']})""").data()
+fig = plt.contourf(xdata, ydata, zdata)
+plt.xlabel(xunits)
+plt.ylabel(yunits)
+plt.colorbar(label=zunits)
+plt.title("edensfit (zipfit)")
+plt.savefig("ne.png")
+```
+
+
+
+
+An example of how this mapping can be used in version-controlled datasets is 
+here [dataset_d3d_100](https://github.com/PPPLDeepLearning/dataset_D3D_100).
+
 
 The [d3d_loader](https://github.com/PlasmaControl/d3d_loaders/tree/main/d3d_loaders) repository
 uses the signal nodes and `map_to` values to load the MDS signals in locally cached hdf5 files.

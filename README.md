@@ -5,17 +5,68 @@ These definitions come in handy when workgin with D3D signals and provide
 * A handy way of accessing them, for example in a locally cached data file
 * Quickly pulling data from MDS or PTDATA without having to remember where data is stored
 
+## Installation and usage
+
+This package is pip-installable. The workflow is to clone the git repository, activate your
+virtual environment, and the install the package:
+
+```bash
+$ git clone git@github.com:PlasmaControl/d3d_signals.git
+$ cd d3d_signals
+$ source venv/bin/activate
+(venv)$ pip install .
+```
+
+Here `source venv/bin/activate` activates a pip virtual environment as described in the
+[python documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/). Other people may use conda instead.
+
+
+If at any point the code was updated, pull the newest code and upgrade the package:
+```bash
+(venv)$ git pull
+(venv)$ pip install --upgrade .
+```
+
+
+Now the data files in this package can be accessed using `resourcelib`:
+
+```python
+from os.path import join
+import importlib.resources
+import yaml
+import d3d_signals
+
+resource_path = importlib.resources.files("d3d_signals")
+
+with open(join(resource_path, "signals_0d.yaml"), "r") as fp:
+    signals_0d = yaml.safe_load(fp)
+
+with open(join(resource_path, "signals_1d.yaml"), "r") as fp:
+    signals_1d = yaml.safe_load(fp)
+
+
+```
+
+
+## Example uses
+
+
+
 The signals used in the repository can be used like this:
 ```python
+import importlib.resources
 import yaml
-import MDSplus as mds
 import matplotlib.pyplot as plt
+import MDSplus as mds
 
+import d3d_signals
 
-with open("signals_0d.yaml", "r") as stream:
-    signal_defs_0d = yaml.safe_load(stream)
+resource_path = importlib.resources.files("d3d_signals")
 
-sig_pinj = signal_defs_0d["pinj"]
+with open(join(resource_path, "signals_0d.yaml"), "r") as fp:
+    signals_0d = yaml.safe_load(fp)
+
+sig_pinj = signals_0d["pinj"]
 
 c = mds.Connection("atlas.gat.com")
 c.openTree(sig_pinj["tree"], 142111)
@@ -37,15 +88,20 @@ plt.savefig("pinj.png")
 
 Similar for a profile:
 ```python
+import importlib.resources
 import yaml
-import MDSplus as mds
 import matplotlib.pyplot as plt
+import MDSplus as mds
+
+import d3d_signals
+
+resource_path = importlib.resources.files("d3d_signals")
+
+with open(join(resource_path, "signals_0d.yaml"), "r") as fp:
+    signals_1d = yaml.safe_load(fp)
 
 
-with open("signals_1d.yaml", "r") as stream:
-    signal_defs_1d = yaml.safe_load(stream)
-
-sig_ne = signal_defs_1d["edensfit"]
+sig_ne = signals_1d["edensfit"]
 
 c = mds.Connection("atlas.gat.com")
 c.openTree(sig_ne["tree"], 142111)

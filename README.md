@@ -49,9 +49,6 @@ with open(join(resource_path, "signals_1d.yaml"), "r") as fp:
 
 
 ## Example uses
-
-
-
 The signals used in the repository can be used like this:
 ```python
 import importlib.resources
@@ -130,7 +127,7 @@ plt.savefig("ne.png")
 ![Result](ne.png)
 
 
-An example of how this mapping can be used in version-controlled datasets is 
+An example of how the mapping are used in version-controlled datasets is 
 here [dataset_d3d_100](https://github.com/PPPLDeepLearning/dataset_D3D_100).
 
 
@@ -138,6 +135,3 @@ The [d3d_loader](https://github.com/PlasmaControl/d3d_loaders/tree/main/d3d_load
 uses the signal nodes and `map_to` values to load the MDS signals in locally cached hdf5 files.
 
 To create such a cache, use the `downloading.py` script provided in this repository.
-
-
-

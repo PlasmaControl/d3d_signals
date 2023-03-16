@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
 
-import importlib.resources
 import yaml
 import matplotlib.pyplot as plt
 import MDSplus as mds
-
+import importlib.resources
 import d3d_signals
 
 resource_path = importlib.resources.files("d3d_signals")

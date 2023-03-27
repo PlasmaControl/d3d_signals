@@ -21,6 +21,13 @@ trotfit:
   map_to: "troftit"
   comment: "Ion rotation profile from zipfit"
 
+zdensfit:
+  type: "MDS"
+  tree: "ZIPFIT01"
+  node: "PROFILES.ZDENSFIT"
+  map_to: "zdensfit"
+  comment: "Impurity profiles from zipfit"
+
 qpsi_efit:
   type: "MDS"
   tree: "EFIT01"
@@ -34,3 +41,20 @@ pres_efit:
   node: "RESULTS.GEQDSK:PRES"
   map_to: "pres_efit"
   comment: "Plasma pressure from EFIT"
+
+ts_core_dens:
+  type: "MDS"
+  tree: "D3D"
+  node: "ELECTRONS.TS.BLESSED.CORE:DENSITY"
+  map_to: "ts_core_dens"
+  comment: "Core electron density from Thomson"
+
+ts_core_temp:
+  type: "MDS"
+  tree: "D3D"
+  node: "ELECTRONS.TS.BLESSED.EDGE:TEMP"
+  map_to: "ts_core_temp"
+  comment: "Edge electron temperature from Thomson"
+
+
+

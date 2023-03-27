@@ -453,6 +453,22 @@ iptipp:
   map_to: "iptipp"
   pcs: true
 
+n1rms:
+  comment: "RMS of N1 mode from Mirnov"
+  type: MDS
+  tree: "D3D"
+  node: "MHD.MIRNOV.N1RMS"
+  map_to: "n1rms"
+
+
+
+iptdirect:
+  comment: "Target current"
+  type: "PTDATA"
+  node: "iptdirect"
+  map_to: "iptdirect"
+  pcs: true
+
 ipsiptargt:
   comment: "Real-time control plasma current target"
   type: "PTDATA"
@@ -558,6 +574,14 @@ dssdenest:
   map_to: "dssdenest"
   pcs: true
 
+
+dusbradial:
+  comment: "???"
+  type: "PTDATA"
+  node: "dusbradial"
+  map_to: "dusbradial"
+  pcs: true
+
 density:
   comment: "Post-processed, based on EFIT"
   type: "MDS"
@@ -572,6 +596,14 @@ q95:
   tree: "EFIT01"
   node: "RESULTS.AEQDSK:Q95"
   map_to: "q95"
+
+q95rt:
+  comment: "Q95 from EFITRT1"
+  type: MDS
+  tree: "EFITRT1"
+  node: "RESULTS.AEQSDK:Q95"
+  map_to: "q95rt"
+
 
 qmin:
   comment: "Minimum safety factor"
@@ -599,4 +631,40 @@ ipeecoil:
   type: "PTDATA"
   node: "ipeecoil"
   map_to: "ipeecoil"
+
+prmtan_neped:
+  comment: "Pedestal electron density"
+  type: "MDS"
+  tree: "ELECTRONS"
+  node: "PRMTAN_NEPED"
+  map_to: "prmtan_neped"
+
+prmtan_newid:
+  comment: "Pedestal electron density width"
+  type: "MDS"
+  tree: "ELECTRONS"
+  node: "PRMTAN_NEWID"
+  map_to: "prmtan_newid"
+
+prmtan_teped:
+  comment: "Pedestal electron temperature"
+  type: "MDS"
+  tree: "ELECTRONS"
+  node: "PRMTAN_TEPED"
+  map_to: "prmtan_teped"
+
+prmtan_tewid:
+  comment: "Pedestal electron temperature width"
+  type: "MDS"
+  tree: "ELECTRONS"
+  node: "PRMTAN_TEPED"
+  map_to: "prmtan_tewid"
+
+prmtan_peped:
+  comment: "Pedestal electron pressure"
+  type: "MDS"
+  tree: "ELECTRONS"
+  node: "PRMTAN_PEPED"
+  map_to: "prmtan_pneped"
+
 

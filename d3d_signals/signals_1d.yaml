@@ -16,8 +16,8 @@ etempfit:
 
 itempfit:
   type: "MDS"
-  tree: "D3D"
-  node: "ELECTRONS.PROFILE_FITS.ZIPFIT:ITEMPFIT"
+  tree: "ZIPFIT01"
+  node: "PROFILES.ITEMPFIT"
   map_to: "itempfit"
   comment: "Ion temperature profile from zipfit"
 

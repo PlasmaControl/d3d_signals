@@ -14,6 +14,13 @@ etempfit:
   map_to: "etempfit"
   comment: "Electron temperature profile from zipfit"
 
+itempfit:
+  type: "MDS"
+  tree: "D3D"
+  node: "ELECTRONS.PROFILE_FITS.ZIPFIT:ITEMPFIT"
+  map_to: "itempfit"
+  comment: "Ion temperature profile from zipfit"
+
 trotfit:
   type: "MDS"
   tree: "ZIPFIT01"

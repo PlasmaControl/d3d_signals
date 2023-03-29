@@ -34,6 +34,12 @@ efswmhd:
   map_to: "efswmhd"
   pcs: true
 
+fs07:
+  comment: "Filterscope 07"
+  type: "MDS"
+  node: "FS07"
+  tree: "SPECTROSCOPY"
+  map_to: "fs07"
 
 Bt:
   comment: "B-coil current, gives Bt in real-time"
@@ -460,8 +466,6 @@ n1rms:
   node: "MHD.MIRNOV.N1RMS"
   map_to: "n1rms"
 
-
-
 iptdirect:
   comment: "Target current"
   type: "PTDATA"
@@ -574,7 +578,6 @@ dssdenest:
   map_to: "dssdenest"
   pcs: true
 
-
 dusbradial:
   comment: "???"
   type: "PTDATA"
@@ -603,7 +606,6 @@ q95rt:
   tree: "EFITRT1"
   node: "RESULTS.AEQSDK:Q95"
   map_to: "q95rt"
-
 
 qmin:
   comment: "Minimum safety factor"

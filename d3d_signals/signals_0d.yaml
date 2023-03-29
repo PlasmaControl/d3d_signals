@@ -37,7 +37,7 @@ efswmhd:
 fs07:
   comment: "Filterscope 07"
   type: "MDS"
-  node: "FS07"
+  node: "\\SPECTROSCOPY::FS07"
   tree: "SPECTROSCOPY"
   map_to: "fs07"
 
@@ -638,35 +638,35 @@ prmtan_neped:
   comment: "Pedestal electron density"
   type: "MDS"
   tree: "ELECTRONS"
-  node: "PRMTAN_NEPED"
+  node: "\\ELECTRONS::PRMTAN_NEPED"
   map_to: "prmtan_neped"
 
 prmtan_newid:
   comment: "Pedestal electron density width"
   type: "MDS"
   tree: "ELECTRONS"
-  node: "PRMTAN_NEWID"
+  node: "\\ELECTRONS::PRMTAN_NEWID"
   map_to: "prmtan_newid"
 
 prmtan_teped:
   comment: "Pedestal electron temperature"
   type: "MDS"
   tree: "ELECTRONS"
-  node: "PRMTAN_TEPED"
+  node: "\\ELECTRONS::PRMTAN_TEPED"
   map_to: "prmtan_teped"
 
 prmtan_tewid:
   comment: "Pedestal electron temperature width"
   type: "MDS"
   tree: "ELECTRONS"
-  node: "PRMTAN_TEPED"
+  node: "\\ELECTRONS::PRMTAN_TEPED"
   map_to: "prmtan_tewid"
 
 prmtan_peped:
   comment: "Pedestal electron pressure"
   type: "MDS"
   tree: "ELECTRONS"
-  node: "PRMTAN_PEPED"
+  node: "\\ELECTRONS::PRMTAN_PEPED"
   map_to: "prmtan_pneped"
 
 
